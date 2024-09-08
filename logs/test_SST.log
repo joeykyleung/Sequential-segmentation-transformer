@@ -1,0 +1,11 @@
+2024-09-08 00:00:07,706 | INFO - __main__ - Device: cuda
+2024-09-08 00:00:07,707 | INFO - __main__ - 
+                ###########################################################################
+                                    >>>   Starting testing   <<< 
+                Saved model to be tested:               SST        
+                Number of samples:                      1
+                ###########################################################################
+                
+2024-09-08 00:00:15,091 | INFO - __main__ - Loading SST model from /homes/jkl223/Desktop/Individual Project/models/checkpoints/SST - best.pt
+2024-09-08 00:00:15,092 | WARNING - ACDCDataset - The ACDC dataset includes 3D images with 21 slices. (256, 256, 16) will not use all the data
+2024-09-08 00:00:17,883 | INFO - ACDCDataset - Loaded ACDC dataset for testing

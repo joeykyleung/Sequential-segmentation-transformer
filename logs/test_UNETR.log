@@ -1,0 +1,15 @@
+2024-09-03 22:53:50,386 | INFO - __main__ - Device: cuda
+2024-09-03 22:53:50,386 | INFO - __main__ - 
+                ###########################################################################
+                                    >>>   Starting testing   <<< 
+                Saved model to be tested:               UNETR        
+                Number of samples:                      1
+                ###########################################################################
+                
+2024-09-03 22:53:51,255 | INFO - __main__ - Loading UNETR model from /homes/jkl223/Desktop/Individual Project/models/checkpoints/UNETR.model
+2024-09-03 22:53:51,256 | WARNING - ACDCDataset - The ACDC dataset includes 3D images with 21 slices. (160, 160, 16) will not use all the data
+2024-09-03 22:53:54,552 | INFO - ACDCDataset - Loaded ACDC dataset for testing
+2024-09-03 22:53:54,847 | INFO - __main__ - running test data (batch size: 1) through UNETR model...
+2024-09-03 22:53:55,904 | INFO - __main__ - dice loss: 0.10379868745803833, hausdorff distance: 6.938294410705566
+2024-09-03 22:53:55,907 | INFO - __main__ - saving images 1/1...
+2024-09-03 22:53:55,907 | INFO - __main__ - image: (1, 160, 160, 16), mask: (1, 160, 160, 16)

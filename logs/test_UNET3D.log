@@ -1,0 +1,14 @@
+2024-09-03 22:54:17,748 | INFO - __main__ - Device: cuda
+2024-09-03 22:54:17,748 | INFO - __main__ - 
+                ###########################################################################
+                                    >>>   Starting testing   <<< 
+                Saved model to be tested:               UNET3D        
+                Number of samples:                      1
+                ###########################################################################
+                
+2024-09-03 22:54:18,790 | INFO - __main__ - Loading UNET3D model from /homes/jkl223/Desktop/Individual Project/models/checkpoints/UNET3D_8_7000.pt
+2024-09-03 22:54:21,443 | INFO - ACDCDataset - Loaded ACDC dataset for testing
+2024-09-03 22:54:21,628 | INFO - __main__ - running test data (batch size: 1) through UNET3D model...
+2024-09-03 22:54:23,134 | INFO - __main__ - dice loss: 0.12170863151550293, hausdorff distance: 6.224747657775879
+2024-09-03 22:54:23,137 | INFO - __main__ - saving images 1/1...
+2024-09-03 22:54:23,137 | INFO - __main__ - image: (1, 128, 128, 21), mask: (1, 128, 128, 21)

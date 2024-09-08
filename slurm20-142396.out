@@ -1,0 +1,160 @@
+Sat Aug 31 14:14:21 2024       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.171.04             Driver Version: 535.171.04   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A100 80GB PCIe          Off | 00000000:01:00.0 Off |                   On |
+| N/A   25C    P0              42W / 300W |     87MiB / 81920MiB |     N/A      Default |
+|                                         |                      |              Enabled |
++-----------------------------------------+----------------------+----------------------+
+
++---------------------------------------------------------------------------------------+
+| MIG devices:                                                                          |
++------------------+--------------------------------+-----------+-----------------------+
+| GPU  GI  CI  MIG |                   Memory-Usage |        Vol|      Shared           |
+|      ID  ID  Dev |                     BAR1-Usage | SM     Unc| CE ENC DEC OFA JPG    |
+|                  |                                |        ECC|                       |
+|==================+================================+===========+=======================|
+|  0    7   0   0  |              12MiB /  9728MiB  | 14      0 |  1   0    0    0    0 |
+|                  |               0MiB / 16383MiB  |           |                       |
++------------------+--------------------------------+-----------+-----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+ 14:14:21 up 131 days,  1:44,  8 users,  load average: 0.02, 0.06, 0.13
+/vol/bitbucket/jkl223/cv_venv/lib/python3.10/site-packages/ignite/handlers/checkpoint.py:17: DeprecationWarning: `TorchScript` support for functional optimizers is deprecated and will be removed in a future PyTorch release. Consider using the `torch.compile` optimizer instead.
+  from torch.distributed.optim import ZeroRedundancyOptimizer
+/vol/bitbucket/jkl223/cv_venv/lib/python3.10/site-packages/transformers/utils/generic.py:311: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  torch.utils._pytree._register_pytree_node(
+/vol/bitbucket/jkl223/cv_venv/lib/python3.10/site-packages/transformers/utils/generic.py:311: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  torch.utils._pytree._register_pytree_node(
+[I 2024-08-31 14:14:58,538] A new study created in memory with name: no-name-56bab2cc-f259-405d-9698-a59303429ae4
+[I 2024-08-31 14:14:58,624] Trial 0 finished with value: inf and parameters: {'learning_rate': 5.53221093173656e-05, 'batch_size': 7, 'n_layers': 32, 'n_heads': 12, 'dim': 1280, 'hidden_dim': 8960, 'weight_decay': 5.930248964467925e-06, 'warmup_epochs': 32, 'beta1': 0.8112285719786589, 'beta2': 0.9304722165804339, 'temperature': 0.6350007798603442, 'accum_grad': 9}. Best is trial 0 with value: inf.
+[I 2024-08-31 15:56:11,078] Trial 1 finished with value: 1.535202145576477 and parameters: {'learning_rate': 5.701202616753444e-06, 'batch_size': 4, 'n_layers': 13, 'n_heads': 16, 'dim': 1536, 'hidden_dim': 6144, 'weight_decay': 0.006985126125466, 'warmup_epochs': 175, 'beta1': 0.8359759583116795, 'beta2': 0.9131909292415682, 'temperature': 1.4469100319701558, 'accum_grad': 12}. Best is trial 1 with value: 1.535202145576477.
+[I 2024-08-31 15:56:11,082] Trial 2 finished with value: inf and parameters: {'learning_rate': 4.400992759219842e-06, 'batch_size': 4, 'n_layers': 14, 'n_heads': 11, 'dim': 512, 'hidden_dim': 3072, 'weight_decay': 0.0007086531617257413, 'warmup_epochs': 29, 'beta1': 0.7266415990237225, 'beta2': 0.9868825777660263, 'temperature': 1.2354169519226925, 'accum_grad': 9}. Best is trial 1 with value: 1.535202145576477.
+[I 2024-08-31 15:56:11,083] Trial 3 finished with value: inf and parameters: {'learning_rate': 1.901164020149025e-05, 'batch_size': 6, 'n_layers': 14, 'n_heads': 6, 'dim': 1280, 'hidden_dim': 8960, 'weight_decay': 0.0010024729897425565, 'warmup_epochs': 59, 'beta1': 0.7648783336723975, 'beta2': 0.9683515181774495, 'temperature': 0.975797435758876, 'accum_grad': 12}. Best is trial 1 with value: 1.535202145576477.
+[I 2024-08-31 15:56:11,085] Trial 4 finished with value: inf and parameters: {'learning_rate': 2.050117522484585e-06, 'batch_size': 7, 'n_layers': 16, 'n_heads': 14, 'dim': 512, 'hidden_dim': 3072, 'weight_decay': 7.77708664295032e-06, 'warmup_epochs': 135, 'beta1': 0.6086385943266241, 'beta2': 0.9630811032246309, 'temperature': 0.6135340751147128, 'accum_grad': 11}. Best is trial 1 with value: 1.535202145576477.
+[I 2024-08-31 15:56:11,086] Trial 5 finished with value: inf and parameters: {'learning_rate': 4.2749323630237145e-06, 'batch_size': 8, 'n_layers': 26, 'n_heads': 6, 'dim': 512, 'hidden_dim': 3584, 'weight_decay': 2.8636700941732813e-05, 'warmup_epochs': 165, 'beta1': 0.8298670568684494, 'beta2': 0.9355849392035585, 'temperature': 0.8830499777536448, 'accum_grad': 12}. Best is trial 1 with value: 1.535202145576477.
+[I 2024-08-31 15:56:11,088] Trial 6 finished with value: inf and parameters: {'learning_rate': 3.9287945777421716e-05, 'batch_size': 6, 'n_layers': 15, 'n_heads': 14, 'dim': 768, 'hidden_dim': 1536, 'weight_decay': 4.029113970288663e-05, 'warmup_epochs': 60, 'beta1': 0.5679696530207301, 'beta2': 0.9765495319292535, 'temperature': 0.5344289899347093, 'accum_grad': 10}. Best is trial 1 with value: 1.535202145576477.
+[I 2024-08-31 15:59:16,373] Trial 7 finished with value: inf and parameters: {'learning_rate': 2.618618121987023e-05, 'batch_size': 6, 'n_layers': 22, 'n_heads': 16, 'dim': 1536, 'hidden_dim': 6144, 'weight_decay': 1.1917429753852747e-06, 'warmup_epochs': 60, 'beta1': 0.5137583815877196, 'beta2': 0.9227571611722247, 'temperature': 1.0520415589272316, 'accum_grad': 5}. Best is trial 1 with value: 1.535202145576477.
+[I 2024-08-31 15:59:16,376] Trial 8 finished with value: inf and parameters: {'learning_rate': 4.12881182894177e-05, 'batch_size': 4, 'n_layers': 12, 'n_heads': 15, 'dim': 1536, 'hidden_dim': 7680, 'weight_decay': 0.009936325107283756, 'warmup_epochs': 131, 'beta1': 0.7404956966505986, 'beta2': 0.9145556602634491, 'temperature': 0.8836399868876479, 'accum_grad': 12}. Best is trial 1 with value: 1.535202145576477.
+[I 2024-08-31 15:59:16,377] Trial 9 finished with value: inf and parameters: {'learning_rate': 2.87754689634564e-06, 'batch_size': 6, 'n_layers': 35, 'n_heads': 9, 'dim': 1792, 'hidden_dim': 12544, 'weight_decay': 0.004474161213470169, 'warmup_epochs': 99, 'beta1': 0.559290424367701, 'beta2': 0.9823553599380991, 'temperature': 1.490783502471888, 'accum_grad': 13}. Best is trial 1 with value: 1.535202145576477.
+[I 2024-08-31 15:59:16,421] Trial 10 finished with value: inf and parameters: {'learning_rate': 1.1058193791024221e-05, 'batch_size': 5, 'n_layers': 20, 'n_heads': 9, 'dim': 2048, 'hidden_dim': 14336, 'weight_decay': 0.00040389275753752136, 'warmup_epochs': 200, 'beta1': 0.9286629365991443, 'beta2': 0.904002154886151, 'temperature': 1.4867797151668125, 'accum_grad': 7}. Best is trial 1 with value: 1.535202145576477.
+[I 2024-08-31 15:59:16,464] Trial 11 finished with value: inf and parameters: {'learning_rate': 9.458376802700755e-05, 'batch_size': 8, 'n_layers': 30, 'n_heads': 12, 'dim': 1024, 'hidden_dim': 6144, 'weight_decay': 3.049249548951577e-06, 'warmup_epochs': 198, 'beta1': 0.8664491255582671, 'beta2': 0.9441395430839055, 'temperature': 1.2137985829053606, 'accum_grad': 8}. Best is trial 1 with value: 1.535202145576477.
+[I 2024-08-31 15:59:16,507] Trial 12 finished with value: inf and parameters: {'learning_rate': 8.545561571893239e-06, 'batch_size': 7, 'n_layers': 36, 'n_heads': 12, 'dim': 1280, 'hidden_dim': 8960, 'weight_decay': 0.00014392168345853188, 'warmup_epochs': 27, 'beta1': 0.8209112136790312, 'beta2': 0.9257701419981079, 'temperature': 0.6950784047149072, 'accum_grad': 7}. Best is trial 1 with value: 1.535202145576477.
+[I 2024-08-31 15:59:40,347] Trial 13 finished with value: inf and parameters: {'learning_rate': 8.249452778221714e-05, 'batch_size': 5, 'n_layers': 28, 'n_heads': 16, 'dim': 1536, 'hidden_dim': 10752, 'weight_decay': 1.1459657659989094e-05, 'warmup_epochs': 98, 'beta1': 0.6575660801356696, 'beta2': 0.9030355295603312, 'temperature': 1.2958437001504872, 'accum_grad': 10}. Best is trial 1 with value: 1.535202145576477.
+[I 2024-08-31 16:05:05,505] Trial 14 finished with value: inf and parameters: {'learning_rate': 1.0353951510034277e-06, 'batch_size': 7, 'n_layers': 32, 'n_heads': 4, 'dim': 1024, 'hidden_dim': 5120, 'weight_decay': 0.00015754565841026192, 'warmup_epochs': 161, 'beta1': 0.9272976356675707, 'beta2': 0.9505046506272443, 'temperature': 0.7746219822175804, 'accum_grad': 9}. Best is trial 1 with value: 1.535202145576477.
+[I 2024-08-31 16:05:05,552] Trial 15 finished with value: inf and parameters: {'learning_rate': 1.1115295673541933e-05, 'batch_size': 5, 'n_layers': 18, 'n_heads': 13, 'dim': 2048, 'hidden_dim': 16384, 'weight_decay': 0.0021621925660063545, 'warmup_epochs': 74, 'beta1': 0.7971585967643371, 'beta2': 0.9313750173509485, 'temperature': 1.0603923373149682, 'accum_grad': 6}. Best is trial 1 with value: 1.535202145576477.
+[I 2024-08-31 16:05:05,597] Trial 16 finished with value: inf and parameters: {'learning_rate': 5.2245186193247656e-06, 'batch_size': 4, 'n_layers': 24, 'n_heads': 10, 'dim': 1792, 'hidden_dim': 10752, 'weight_decay': 3.8662552314795085e-05, 'warmup_epochs': 14, 'beta1': 0.8758157844451807, 'beta2': 0.9142337515958074, 'temperature': 1.3720753114038464, 'accum_grad': 10}. Best is trial 1 with value: 1.535202145576477.
+[I 2024-08-31 16:05:05,643] Trial 17 finished with value: inf and parameters: {'learning_rate': 1.691214140071628e-05, 'batch_size': 7, 'n_layers': 32, 'n_heads': 14, 'dim': 1024, 'hidden_dim': 5120, 'weight_decay': 4.851847578749171e-06, 'warmup_epochs': 126, 'beta1': 0.6644458433487611, 'beta2': 0.9465637833654227, 'temperature': 1.1312600050979014, 'accum_grad': 13}. Best is trial 1 with value: 1.535202145576477.
+[I 2024-08-31 16:09:08,529] Trial 18 finished with value: inf and parameters: {'learning_rate': 5.882419531969157e-05, 'batch_size': 5, 'n_layers': 24, 'n_heads': 8, 'dim': 1280, 'hidden_dim': 7680, 'weight_decay': 1.4128393659526004e-06, 'warmup_epochs': 161, 'beta1': 0.8778663082074157, 'beta2': 0.9373470466424421, 'temperature': 0.7773607957710009, 'accum_grad': 8}. Best is trial 1 with value: 1.535202145576477.
+[I 2024-08-31 16:09:08,578] Trial 19 finished with value: inf and parameters: {'learning_rate': 6.6057677072253635e-06, 'batch_size': 8, 'n_layers': 20, 'n_heads': 12, 'dim': 1792, 'hidden_dim': 10752, 'weight_decay': 1.3445029736562843e-05, 'warmup_epochs': 83, 'beta1': 0.6818106990722576, 'beta2': 0.9121156803489896, 'temperature': 0.5444503794464354, 'accum_grad': 11}. Best is trial 1 with value: 1.535202145576477.
+[I 2024-08-31 16:09:08,625] Trial 20 finished with value: inf and parameters: {'learning_rate': 1.4476563095643367e-06, 'batch_size': 7, 'n_layers': 27, 'n_heads': 15, 'dim': 1536, 'hidden_dim': 9216, 'weight_decay': 8.609115339790526e-05, 'warmup_epochs': 115, 'beta1': 0.7911395149314235, 'beta2': 0.9566061131291698, 'temperature': 0.9307993151506737, 'accum_grad': 8}. Best is trial 1 with value: 1.535202145576477.
+[I 2024-08-31 16:09:08,672] Trial 21 finished with value: inf and parameters: {'learning_rate': 4.049235062871567e-06, 'batch_size': 4, 'n_layers': 12, 'n_heads': 11, 'dim': 768, 'hidden_dim': 2304, 'weight_decay': 0.0006904165870170827, 'warmup_epochs': 30, 'beta1': 0.7117973507871683, 'beta2': 0.9908408477773502, 'temperature': 1.347016926432364, 'accum_grad': 10}. Best is trial 1 with value: 1.535202145576477.
+[I 2024-08-31 16:09:08,719] Trial 22 finished with value: inf and parameters: {'learning_rate': 3.369879874038091e-06, 'batch_size': 4, 'n_layers': 17, 'n_heads': 11, 'dim': 768, 'hidden_dim': 3072, 'weight_decay': 0.002542364757258709, 'warmup_epochs': 33, 'beta1': 0.8418582199583983, 'beta2': 0.9967858793639621, 'temperature': 1.213504307263432, 'accum_grad': 9}. Best is trial 1 with value: 1.535202145576477.
+[I 2024-08-31 17:54:02,384] Trial 23 finished with value: 1.7943511009216309 and parameters: {'learning_rate': 2.332497262731685e-06, 'batch_size': 4, 'n_layers': 19, 'n_heads': 8, 'dim': 1280, 'hidden_dim': 5120, 'weight_decay': 0.008402052626887967, 'warmup_epochs': 15, 'beta1': 0.7520723571940577, 'beta2': 0.9248669976281358, 'temperature': 1.3977131681403048, 'accum_grad': 9}. Best is trial 1 with value: 1.535202145576477.
+[I 2024-08-31 20:02:01,679] Trial 24 finished with value: 2.5321736335754395 and parameters: {'learning_rate': 2.3079607954074334e-06, 'batch_size': 5, 'n_layers': 19, 'n_heads': 8, 'dim': 1280, 'hidden_dim': 5120, 'weight_decay': 0.006563218913998279, 'warmup_epochs': 42, 'beta1': 0.7843914728359385, 'beta2': 0.9225470169904685, 'temperature': 1.4055830140187646, 'accum_grad': 11}. Best is trial 1 with value: 1.535202145576477.
+[I 2024-08-31 20:02:01,728] Trial 25 finished with value: inf and parameters: {'learning_rate': 2.3189461179365925e-06, 'batch_size': 5, 'n_layers': 19, 'n_heads': 7, 'dim': 1024, 'hidden_dim': 4096, 'weight_decay': 0.009439250060056954, 'warmup_epochs': 13, 'beta1': 0.7766840895807208, 'beta2': 0.9226284784626276, 'temperature': 1.414526142078968, 'accum_grad': 11}. Best is trial 1 with value: 1.535202145576477.
+[I 2024-08-31 20:06:44,002] Trial 26 finished with value: inf and parameters: {'learning_rate': 1.7106742518352241e-06, 'batch_size': 4, 'n_layers': 22, 'n_heads': 4, 'dim': 1536, 'hidden_dim': 6144, 'weight_decay': 0.004127534562377684, 'warmup_epochs': 183, 'beta1': 0.7588474723567064, 'beta2': 0.9100139905122695, 'temperature': 1.4225837137592816, 'accum_grad': 11}. Best is trial 1 with value: 1.535202145576477.
+[I 2024-08-31 20:06:44,052] Trial 27 finished with value: inf and parameters: {'learning_rate': 1.0607167764779508e-06, 'batch_size': 5, 'n_layers': 22, 'n_heads': 7, 'dim': 1280, 'hidden_dim': 5120, 'weight_decay': 0.0015794033030048452, 'warmup_epochs': 50, 'beta1': 0.6991163214650123, 'beta2': 0.9193788210531838, 'temperature': 1.3030199423553726, 'accum_grad': 13}. Best is trial 1 with value: 1.535202145576477.
+[I 2024-08-31 20:06:44,100] Trial 28 finished with value: inf and parameters: {'learning_rate': 2.591538730347885e-06, 'batch_size': 4, 'n_layers': 18, 'n_heads': 9, 'dim': 1792, 'hidden_dim': 7168, 'weight_decay': 0.004617207295042832, 'warmup_epochs': 81, 'beta1': 0.6355999561099478, 'beta2': 0.9387054368458784, 'temperature': 1.14391079621687, 'accum_grad': 12}. Best is trial 1 with value: 1.535202145576477.
+[I 2024-08-31 21:56:38,364] Trial 29 finished with value: 1.7121825218200684 and parameters: {'learning_rate': 7.302375809911844e-06, 'batch_size': 5, 'n_layers': 16, 'n_heads': 5, 'dim': 1280, 'hidden_dim': 5120, 'weight_decay': 0.00036854682445190153, 'warmup_epochs': 40, 'beta1': 0.90773538487854, 'beta2': 0.9002025502045524, 'temperature': 1.426537963139768, 'accum_grad': 11}. Best is trial 1 with value: 1.535202145576477.
+[I 2024-08-31 21:56:38,415] Trial 30 finished with value: inf and parameters: {'learning_rate': 7.5034212246356575e-06, 'batch_size': 4, 'n_layers': 14, 'n_heads': 5, 'dim': 1536, 'hidden_dim': 6144, 'weight_decay': 0.001253203908313617, 'warmup_epochs': 146, 'beta1': 0.9081762750975244, 'beta2': 0.9006412399084831, 'temperature': 1.495353675226847, 'accum_grad': 10}. Best is trial 1 with value: 1.535202145576477.
+[I 2024-08-31 23:47:43,047] Trial 31 finished with value: 1.968756079673767 and parameters: {'learning_rate': 6.4110373109410326e-06, 'batch_size': 5, 'n_layers': 16, 'n_heads': 8, 'dim': 1280, 'hidden_dim': 5120, 'weight_decay': 0.00032062926024764495, 'warmup_epochs': 47, 'beta1': 0.8333549200782601, 'beta2': 0.9081120024297286, 'temperature': 1.4073094012701484, 'accum_grad': 11}. Best is trial 1 with value: 1.535202145576477.
+[I 2024-08-31 23:47:43,099] Trial 32 finished with value: inf and parameters: {'learning_rate': 5.8163673797583895e-06, 'batch_size': 5, 'n_layers': 16, 'n_heads': 6, 'dim': 1280, 'hidden_dim': 5120, 'weight_decay': 0.0002984816911067529, 'warmup_epochs': 10, 'beta1': 0.9462956729766208, 'beta2': 0.9078517925196528, 'temperature': 1.2985789660893687, 'accum_grad': 12}. Best is trial 1 with value: 1.535202145576477.
+[I 2024-08-31 23:47:43,149] Trial 33 finished with value: inf and parameters: {'learning_rate': 1.5773742821823857e-05, 'batch_size': 4, 'n_layers': 13, 'n_heads': 7, 'dim': 1024, 'hidden_dim': 4096, 'weight_decay': 0.0004579832599670334, 'warmup_epochs': 47, 'beta1': 0.8444736803299491, 'beta2': 0.9000558283958217, 'temperature': 1.4446892558801165, 'accum_grad': 9}. Best is trial 1 with value: 1.535202145576477.
+[I 2024-09-01 01:30:34,714] Trial 34 finished with value: 2.570469379425049 and parameters: {'learning_rate': 1.264957897204579e-05, 'batch_size': 5, 'n_layers': 15, 'n_heads': 5, 'dim': 1280, 'hidden_dim': 5120, 'weight_decay': 0.0007116990117045839, 'warmup_epochs': 23, 'beta1': 0.9004303279473252, 'beta2': 0.9155377923786698, 'temperature': 1.3482763394494037, 'accum_grad': 11}. Best is trial 1 with value: 1.535202145576477.
+[I 2024-09-01 01:30:34,766] Trial 35 finished with value: inf and parameters: {'learning_rate': 8.872265408457404e-06, 'batch_size': 4, 'n_layers': 16, 'n_heads': 10, 'dim': 1536, 'hidden_dim': 6144, 'weight_decay': 0.0002016916448422019, 'warmup_epochs': 41, 'beta1': 0.7439673994816471, 'beta2': 0.9287564889415079, 'temperature': 1.244039839165396, 'accum_grad': 13}. Best is trial 1 with value: 1.535202145576477.
+[I 2024-09-01 03:15:13,815] Trial 36 finished with value: 1.7455815076828003 and parameters: {'learning_rate': 3.595649344140622e-06, 'batch_size': 6, 'n_layers': 14, 'n_heads': 8, 'dim': 1280, 'hidden_dim': 3840, 'weight_decay': 7.66030195840699e-05, 'warmup_epochs': 62, 'beta1': 0.8616613612293038, 'beta2': 0.9070150328843289, 'temperature': 1.376051035271447, 'accum_grad': 12}. Best is trial 1 with value: 1.535202145576477.
+[I 2024-09-01 03:15:13,869] Trial 37 finished with value: inf and parameters: {'learning_rate': 3.5692409465938782e-06, 'batch_size': 6, 'n_layers': 13, 'n_heads': 5, 'dim': 1024, 'hidden_dim': 4096, 'weight_decay': 8.380647384342141e-05, 'warmup_epochs': 70, 'beta1': 0.8645062401284176, 'beta2': 0.9057661040286692, 'temperature': 1.2590488916454232, 'accum_grad': 12}. Best is trial 1 with value: 1.535202145576477.
+[I 2024-09-01 03:15:13,921] Trial 38 finished with value: inf and parameters: {'learning_rate': 4.451299253378284e-06, 'batch_size': 6, 'n_layers': 15, 'n_heads': 10, 'dim': 1536, 'hidden_dim': 7680, 'weight_decay': 6.3934848653215e-05, 'warmup_epochs': 58, 'beta1': 0.8073019945890958, 'beta2': 0.9174948480893129, 'temperature': 1.1452699604192127, 'accum_grad': 12}. Best is trial 1 with value: 1.535202145576477.
+[I 2024-09-01 03:15:13,972] Trial 39 finished with value: inf and parameters: {'learning_rate': 1.7100856711050392e-06, 'batch_size': 6, 'n_layers': 14, 'n_heads': 6, 'dim': 1280, 'hidden_dim': 3840, 'weight_decay': 0.00238764218794302, 'warmup_epochs': 88, 'beta1': 0.8884744556604932, 'beta2': 0.910820848216402, 'temperature': 1.3657889820037767, 'accum_grad': 13}. Best is trial 1 with value: 1.535202145576477.
+[I 2024-09-01 03:15:14,024] Trial 40 finished with value: inf and parameters: {'learning_rate': 3.09187958709093e-06, 'batch_size': 4, 'n_layers': 12, 'n_heads': 9, 'dim': 768, 'hidden_dim': 4608, 'weight_decay': 0.000867388288652779, 'warmup_epochs': 116, 'beta1': 0.8495844755250388, 'beta2': 0.9287158061099078, 'temperature': 1.4569158804029299, 'accum_grad': 10}. Best is trial 1 with value: 1.535202145576477.
+[I 2024-09-01 05:12:15,143] Trial 41 finished with value: 1.9367157220840454 and parameters: {'learning_rate': 4.8947278056834724e-06, 'batch_size': 5, 'n_layers': 17, 'n_heads': 8, 'dim': 1280, 'hidden_dim': 5120, 'weight_decay': 2.061460970837302e-05, 'warmup_epochs': 66, 'beta1': 0.8249350612594833, 'beta2': 0.9070365873618069, 'temperature': 1.402642855831802, 'accum_grad': 11}. Best is trial 1 with value: 1.535202145576477.
+[I 2024-09-01 07:43:21,242] Trial 42 finished with value: 1.9872668981552124 and parameters: {'learning_rate': 4.945119427280175e-06, 'batch_size': 6, 'n_layers': 17, 'n_heads': 8, 'dim': 1280, 'hidden_dim': 6400, 'weight_decay': 2.6084871106485552e-05, 'warmup_epochs': 66, 'beta1': 0.8077897356049846, 'beta2': 0.9057106888001838, 'temperature': 1.3222269569009086, 'accum_grad': 12}. Best is trial 1 with value: 1.535202145576477.
+[I 2024-09-01 07:43:21,297] Trial 43 finished with value: inf and parameters: {'learning_rate': 2.267874354947252e-05, 'batch_size': 5, 'n_layers': 21, 'n_heads': 7, 'dim': 1280, 'hidden_dim': 2560, 'weight_decay': 2.743180408103372e-05, 'warmup_epochs': 20, 'beta1': 0.9205795069368929, 'beta2': 0.9174867496285335, 'temperature': 1.4555676130102113, 'accum_grad': 11}. Best is trial 1 with value: 1.535202145576477.
+[I 2024-09-01 09:24:19,935] Trial 44 finished with value: 1.6918697357177734 and parameters: {'learning_rate': 4.266501004462222e-06, 'batch_size': 4, 'n_layers': 13, 'n_heads': 6, 'dim': 1536, 'hidden_dim': 6144, 'weight_decay': 1.7640267347287653e-05, 'warmup_epochs': 35, 'beta1': 0.9486161600080544, 'beta2': 0.9712857211075819, 'temperature': 1.388634567851956, 'accum_grad': 12}. Best is trial 1 with value: 1.535202145576477.
+[I 2024-09-01 11:05:01,235] Trial 45 finished with value: 1.4485596418380737 and parameters: {'learning_rate': 3.769757300217481e-06, 'batch_size': 4, 'n_layers': 13, 'n_heads': 6, 'dim': 1536, 'hidden_dim': 6144, 'weight_decay': 7.371194086908685e-06, 'warmup_epochs': 36, 'beta1': 0.9026654974735073, 'beta2': 0.9703640891234611, 'temperature': 1.2691553399399145, 'accum_grad': 12}. Best is trial 45 with value: 1.4485596418380737.
+[I 2024-09-01 11:05:01,289] Trial 46 finished with value: inf and parameters: {'learning_rate': 3.939406956519489e-06, 'batch_size': 4, 'n_layers': 13, 'n_heads': 5, 'dim': 1792, 'hidden_dim': 7168, 'weight_decay': 6.640129626650427e-06, 'warmup_epochs': 35, 'beta1': 0.9428733586434892, 'beta2': 0.9648646545631874, 'temperature': 1.2024453276019993, 'accum_grad': 12}. Best is trial 45 with value: 1.4485596418380737.
+[I 2024-09-01 12:53:09,053] Trial 47 finished with value: 2.1709742546081543 and parameters: {'learning_rate': 7.755263189270839e-06, 'batch_size': 4, 'n_layers': 14, 'n_heads': 6, 'dim': 1536, 'hidden_dim': 6144, 'weight_decay': 3.4346000435201777e-06, 'warmup_epochs': 59, 'beta1': 0.9022343703369831, 'beta2': 0.9728917127309674, 'temperature': 1.271523091568635, 'accum_grad': 12}. Best is trial 45 with value: 1.4485596418380737.
+[I 2024-09-01 12:53:09,107] Trial 48 finished with value: inf and parameters: {'learning_rate': 1.0215466130356391e-05, 'batch_size': 4, 'n_layers': 12, 'n_heads': 5, 'dim': 1792, 'hidden_dim': 8960, 'weight_decay': 1.318615458223334e-05, 'warmup_epochs': 53, 'beta1': 0.9284622569307522, 'beta2': 0.9805930977784668, 'temperature': 1.493762916762726, 'accum_grad': 13}. Best is trial 45 with value: 1.4485596418380737.
+[I 2024-09-01 13:00:41,172] Trial 49 finished with value: inf and parameters: {'learning_rate': 2.9680571721890595e-06, 'batch_size': 6, 'n_layers': 15, 'n_heads': 4, 'dim': 1536, 'hidden_dim': 6144, 'weight_decay': 5.2389700415329816e-05, 'warmup_epochs': 175, 'beta1': 0.8619355865221829, 'beta2': 0.9580064996128441, 'temperature': 1.358648264933644, 'accum_grad': 13}. Best is trial 45 with value: 1.4485596418380737.
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+CUDA OOM error: CUDA out of memory. Tried to allocate 36.00 MiB. GPU 0 has a total capacity of 9.50 GiB of which 6.00 MiB is free. Including non-PyTorch memory, this process has 9.47 GiB memory in use. Of the allocated memory 9.14 GiB is allocated by PyTorch, and 229.23 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+CUDA OOM error: CUDA out of memory. Tried to allocate 54.00 MiB. GPU 0 has a total capacity of 9.50 GiB of which 36.00 MiB is free. Including non-PyTorch memory, this process has 9.45 GiB memory in use. Of the allocated memory 9.12 GiB is allocated by PyTorch, and 224.01 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+CUDA OOM error: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 9.50 GiB of which 4.00 MiB is free. Including non-PyTorch memory, this process has 9.48 GiB memory in use. Of the allocated memory 9.06 GiB is allocated by PyTorch, and 320.10 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+CUDA OOM error: CUDA out of memory. Tried to allocate 38.00 MiB. GPU 0 has a total capacity of 9.50 GiB of which 30.00 MiB is free. Including non-PyTorch memory, this process has 9.45 GiB memory in use. Of the allocated memory 9.07 GiB is allocated by PyTorch, and 281.72 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+CUDA OOM error: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 9.50 GiB of which 18.00 MiB is free. Including non-PyTorch memory, this process has 9.46 GiB memory in use. Of the allocated memory 9.11 GiB is allocated by PyTorch, and 255.83 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+Model: SST | Testing: False | Cross validation: False | Epochs: 400
+CUDA OOM error: CUDA out of memory. Tried to allocate 38.00 MiB. GPU 0 has a total capacity of 9.50 GiB of which 34.00 MiB is free. Including non-PyTorch memory, this process has 9.45 GiB memory in use. Of the allocated memory 9.13 GiB is allocated by PyTorch, and 216.06 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Number of finished trials:  50
+  Best Loss: 1.4485596418380737
+  Params: 
+    learning_rate: 3.769757300217481e-06
+    batch_size: 4
+    n_layers: 13
+    n_heads: 6
+    dim: 1536
+    hidden_dim: 6144
+    weight_decay: 7.371194086908685e-06
+    warmup_epochs: 36
+    beta1: 0.9026654974735073
+    beta2: 0.9703640891234611
+    temperature: 1.2691553399399145
+    accum_grad: 12
