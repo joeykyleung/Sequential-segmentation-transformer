@@ -1,16 +1,34 @@
-2024-09-03 22:59:11,306 | INFO - __main__ - Device: cuda
-2024-09-03 22:59:11,306 | INFO - __main__ - 
+2024-09-09 01:24:12,651 | INFO - __main__ - Device: cuda
+2024-09-09 01:24:12,652 | INFO - __main__ - 
                 ###########################################################################
                                     >>>   Starting testing   <<< 
                 Saved model to be tested:               VQGAN        
-                Number of samples:                      1
+                Number of samples:                      10
                 ###########################################################################
                 
-2024-09-03 22:59:13,298 | INFO - __main__ - Loading VQGAN model from /homes/jkl223/Desktop/Individual Project/models/checkpoints/VQGAN_1_5000.pt
-2024-09-03 22:59:13,298 | WARNING - ACDCDataset - The ACDC dataset includes 3D images with 21 slices. (256, 256, 16) will not use all the data
-2024-09-03 22:59:16,167 | INFO - ACDCDataset - Loaded ACDC dataset for testing
-2024-09-03 22:59:16,233 | INFO - __main__ - running test data (batch size: 1) through VQGAN model...
-2024-09-03 22:59:32,102 | INFO - __main__ - dice (image): 0.0, dice (label): 0.9563605189323425
-2024-09-03 22:59:32,103 | INFO - __main__ - hausdorff distance (image): inf, hausdorff distance (label): 28.879058837890625
-2024-09-03 22:59:32,118 | INFO - __main__ - saving images 1/1...
-2024-09-03 22:59:32,118 | INFO - __main__ - image: (1, 256, 256, 16), mask: (1, 256, 256, 16)
+2024-09-09 01:24:16,198 | INFO - __main__ - Loading VQGAN model from /homes/jkl223/Desktop/Individual Project/models/checkpoints/VQGAN_1_5000.pt
+2024-09-09 01:24:16,199 | WARNING - ACDCDataset - The ACDC dataset includes 3D images with 21 slices. (256, 256, 16) will not use all the data
+2024-09-09 01:24:18,853 | INFO - ACDCDataset - Loaded ACDC dataset for testing
+2024-09-09 01:24:19,314 | INFO - __main__ - running test data (batch size: 10) through VQGAN model...
+2024-09-09 01:24:49,953 | INFO - __main__ - dice (image): 0.0, dice (label): 0.9483339190483093
+2024-09-09 01:24:49,955 | INFO - __main__ - hausdorff distance (image): inf, hausdorff distance (label): 18.910076141357422
+2024-09-09 01:24:50,108 | INFO - __main__ - saving images 1/10...
+2024-09-09 01:24:50,108 | INFO - __main__ - image: (1, 256, 256, 16), mask: (1, 256, 256, 16)
+2024-09-09 01:24:50,108 | INFO - __main__ - saving images 2/10...
+2024-09-09 01:24:50,108 | INFO - __main__ - image: (1, 256, 256, 16), mask: (1, 256, 256, 16)
+2024-09-09 01:24:50,108 | INFO - __main__ - saving images 3/10...
+2024-09-09 01:24:50,108 | INFO - __main__ - image: (1, 256, 256, 16), mask: (1, 256, 256, 16)
+2024-09-09 01:24:50,108 | INFO - __main__ - saving images 4/10...
+2024-09-09 01:24:50,108 | INFO - __main__ - image: (1, 256, 256, 16), mask: (1, 256, 256, 16)
+2024-09-09 01:24:50,108 | INFO - __main__ - saving images 5/10...
+2024-09-09 01:24:50,108 | INFO - __main__ - image: (1, 256, 256, 16), mask: (1, 256, 256, 16)
+2024-09-09 01:24:50,108 | INFO - __main__ - saving images 6/10...
+2024-09-09 01:24:50,109 | INFO - __main__ - image: (1, 256, 256, 16), mask: (1, 256, 256, 16)
+2024-09-09 01:24:50,109 | INFO - __main__ - saving images 7/10...
+2024-09-09 01:24:50,109 | INFO - __main__ - image: (1, 256, 256, 16), mask: (1, 256, 256, 16)
+2024-09-09 01:24:50,109 | INFO - __main__ - saving images 8/10...
+2024-09-09 01:24:50,109 | INFO - __main__ - image: (1, 256, 256, 16), mask: (1, 256, 256, 16)
+2024-09-09 01:24:50,109 | INFO - __main__ - saving images 9/10...
+2024-09-09 01:24:50,109 | INFO - __main__ - image: (1, 256, 256, 16), mask: (1, 256, 256, 16)
+2024-09-09 01:24:50,109 | INFO - __main__ - saving images 10/10...
+2024-09-09 01:24:50,109 | INFO - __main__ - image: (1, 256, 256, 16), mask: (1, 256, 256, 16)

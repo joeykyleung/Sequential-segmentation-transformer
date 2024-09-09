@@ -109,8 +109,8 @@ def test(dataset, model, model_name, test_set_size, slice_size, save_dir):
     model = model.to(device)
     model.eval()
     
-    # images, labels = dataset.get_random_batch(test_set_size, val=False, training=False, augment=False)
-    images, labels = dataset.get_random_batch(test_set_size, val=False, training=False, augment=False, index=22)
+    images, labels = dataset.get_random_batch(test_set_size, val=False, training=False, augment=False)
+    # images, labels = dataset.get_random_batch(test_set_size, val=False, training=False, augment=False, index=22)
     images, labels = torch.from_numpy(images), torch.from_numpy(labels)
     images, labels = images.to(device, dtype=torch.float32), labels.to(device, dtype=torch.float32)
     
@@ -214,6 +214,7 @@ def test(dataset, model, model_name, test_set_size, slice_size, save_dir):
         logger.info(f'saving images {i+1}/{test_set_size}...')
         logger.info(f'image: {image.shape}, mask: {mask.shape}')
         image, mask, label, label_mask = image.squeeze(), mask.squeeze(), label.squeeze(), label_mask.squeeze()
+        '''
         if model_name == 'VQGAN':
             utils.save_image_and_label(image, label, save_dir=save_dir, name=f'{model_name}_{i+1} - original_')
             utils.save_image_and_label(mask, label_mask, save_dir=save_dir, name=f'{model_name}_{i+1} - reconstructed_')
@@ -226,7 +227,7 @@ def test(dataset, model, model_name, test_set_size, slice_size, save_dir):
             # utils.save_slice(image=image[..., 11], name=f'Test_{i+1}_slice_11')
             # utils.save_slice(image=image[..., 12], name=f'Test_{i+1}_slice_12')
             # utils.save_gt(label, name=f'Test_{i+1} - gt - slice_')
- 
+        '''
    
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Testing parameters')

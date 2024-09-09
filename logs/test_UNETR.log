@@ -1,15 +1,33 @@
-2024-09-03 22:53:50,386 | INFO - __main__ - Device: cuda
-2024-09-03 22:53:50,386 | INFO - __main__ - 
+2024-09-09 01:16:01,784 | INFO - __main__ - Device: cuda
+2024-09-09 01:16:01,784 | INFO - __main__ - 
                 ###########################################################################
                                     >>>   Starting testing   <<< 
                 Saved model to be tested:               UNETR        
-                Number of samples:                      1
+                Number of samples:                      10
                 ###########################################################################
                 
-2024-09-03 22:53:51,255 | INFO - __main__ - Loading UNETR model from /homes/jkl223/Desktop/Individual Project/models/checkpoints/UNETR.model
-2024-09-03 22:53:51,256 | WARNING - ACDCDataset - The ACDC dataset includes 3D images with 21 slices. (160, 160, 16) will not use all the data
-2024-09-03 22:53:54,552 | INFO - ACDCDataset - Loaded ACDC dataset for testing
-2024-09-03 22:53:54,847 | INFO - __main__ - running test data (batch size: 1) through UNETR model...
-2024-09-03 22:53:55,904 | INFO - __main__ - dice loss: 0.10379868745803833, hausdorff distance: 6.938294410705566
-2024-09-03 22:53:55,907 | INFO - __main__ - saving images 1/1...
-2024-09-03 22:53:55,907 | INFO - __main__ - image: (1, 160, 160, 16), mask: (1, 160, 160, 16)
+2024-09-09 01:16:02,952 | INFO - __main__ - Loading UNETR model from /homes/jkl223/Desktop/Individual Project/models/checkpoints/UNETR.model
+2024-09-09 01:16:02,952 | WARNING - ACDCDataset - The ACDC dataset includes 3D images with 21 slices. (160, 160, 16) will not use all the data
+2024-09-09 01:16:06,196 | INFO - ACDCDataset - Loaded ACDC dataset for testing
+2024-09-09 01:16:07,033 | INFO - __main__ - running test data (batch size: 10) through UNETR model...
+2024-09-09 01:16:12,616 | INFO - __main__ - dice loss: 0.0785285234451294, hausdorff distance: 4.163410186767578
+2024-09-09 01:16:12,650 | INFO - __main__ - saving images 1/10...
+2024-09-09 01:16:12,650 | INFO - __main__ - image: (1, 160, 160, 16), mask: (1, 160, 160, 16)
+2024-09-09 01:16:12,650 | INFO - __main__ - saving images 2/10...
+2024-09-09 01:16:12,651 | INFO - __main__ - image: (1, 160, 160, 16), mask: (1, 160, 160, 16)
+2024-09-09 01:16:12,651 | INFO - __main__ - saving images 3/10...
+2024-09-09 01:16:12,652 | INFO - __main__ - image: (1, 160, 160, 16), mask: (1, 160, 160, 16)
+2024-09-09 01:16:12,652 | INFO - __main__ - saving images 4/10...
+2024-09-09 01:16:12,653 | INFO - __main__ - image: (1, 160, 160, 16), mask: (1, 160, 160, 16)
+2024-09-09 01:16:12,653 | INFO - __main__ - saving images 5/10...
+2024-09-09 01:16:12,654 | INFO - __main__ - image: (1, 160, 160, 16), mask: (1, 160, 160, 16)
+2024-09-09 01:16:12,654 | INFO - __main__ - saving images 6/10...
+2024-09-09 01:16:12,655 | INFO - __main__ - image: (1, 160, 160, 16), mask: (1, 160, 160, 16)
+2024-09-09 01:16:12,655 | INFO - __main__ - saving images 7/10...
+2024-09-09 01:16:12,656 | INFO - __main__ - image: (1, 160, 160, 16), mask: (1, 160, 160, 16)
+2024-09-09 01:16:12,656 | INFO - __main__ - saving images 8/10...
+2024-09-09 01:16:12,657 | INFO - __main__ - image: (1, 160, 160, 16), mask: (1, 160, 160, 16)
+2024-09-09 01:16:12,657 | INFO - __main__ - saving images 9/10...
+2024-09-09 01:16:12,658 | INFO - __main__ - image: (1, 160, 160, 16), mask: (1, 160, 160, 16)
+2024-09-09 01:16:12,658 | INFO - __main__ - saving images 10/10...
+2024-09-09 01:16:12,659 | INFO - __main__ - image: (1, 160, 160, 16), mask: (1, 160, 160, 16)
